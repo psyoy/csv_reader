@@ -1,10 +1,10 @@
 import argparse
 
-from src.data.report_repo import ReportRepo
-from src.data.console_repo import ConsoleRepo
-from src.usecase.args_parser_usecase import ArgsParserUseCase
-from src.usecase.files_reader import FilesReader
-from src.usecase.read_csv_usecase import ReadCSVUseCase
+from src.infrastructure.report_repo import ReportRepo
+from src.infrastructure.console_repo import ConsoleRepo
+from src.application.args_parser_usecase import ArgsParserUseCase
+from src.application.files_reader import FilesReader
+from src.application.read_csv_usecase import ReadCSVUseCase
 
 
 class Container:

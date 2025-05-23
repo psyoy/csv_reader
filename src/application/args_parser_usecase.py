@@ -1,7 +1,7 @@
 import argparse
 
 class ArgsParserUseCase:
-    """Console arguments parsing usecase"""
+    """Console arguments parsing application"""
     def __init__(self) -> None:
         self.parser: argparse.ArgumentParser = argparse.ArgumentParser(description="Parse console arguments")
         self._add_arguments()

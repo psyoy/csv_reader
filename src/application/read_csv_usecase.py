@@ -1,7 +1,7 @@
 import argparse
 from typing import override
 
-from src.usecase.files_reader import FilesReader
+from src.application.files_reader import FilesReader
 from src.domain.table import Table
 
 row = list[str]
