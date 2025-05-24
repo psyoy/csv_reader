@@ -1,8 +1,10 @@
 from dataclasses import dataclass
 
-row = list[str]
+from src.domain.employee import Employee
+
 
 @dataclass
 class Table:
+    name: str
     header: list[str]
-    rows: list[row]
+    rows: list[Employee]

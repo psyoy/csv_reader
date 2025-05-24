@@ -1,11 +1,12 @@
+from src.application.report_creator import ReportCreator
 from src.infrastructure.report_repo import ReportRepo
-from src.domain.table import Table
 
 
 class ConsoleRepo(ReportRepo):
-    def __init__(self, tables: list[Table]) -> None:
-        self.tables: list[Table] = tables
+    def __init__(self, report_creator: ReportCreator) -> None:
+        self._report_creator: ReportCreator = report_creator
 
     def save(self) -> None:
-        for table in self.tables:
-            print(table)
+        table: list[str] = self._report_creator.create()
+        for rows in table:
+            print(rows)
