@@ -15,7 +15,7 @@ class CreatePayoutReportUseCase(ReportCreator):
         report: list[str] = []
         table: Table = self._table_creator.create_table()
         if table.name ==  "payout":
-            header: str = "{:<25} {:<15} {:<12} {:<15} {:<10}".format(
+            header: str = "{:<15} {:<15} {:<25} {:<15} {:<15}".format(
         table.header[0],
             table.header[1],
             table.header[2],
