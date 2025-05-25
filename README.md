@@ -13,7 +13,7 @@ git clone https://github.com/psyoy/csv_reader
  
 cd csv_reader
 
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 3. Запустите скрипт с CSV-файлами:
