@@ -9,8 +9,10 @@
 1. Установите Python 3.10+
 2. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/yourname/payout-report-generator 
-cd payout-report-generator
+git clone https://github.com/psyoy/csv_reader
+ 
+cd csv_reader
+
 ```
 
 3. Запустите скрипт с CSV-файлами:
