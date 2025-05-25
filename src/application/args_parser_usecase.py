@@ -1,7 +1,6 @@
 import argparse
 
 class ArgsParserUseCase:
-    """Console arguments parsing application"""
     def __init__(self) -> None:
         self.parser: argparse.ArgumentParser = argparse.ArgumentParser(description="Parse console arguments")
         self._add_arguments()
@@ -20,9 +19,5 @@ class ArgsParserUseCase:
         )
 
     def get_args(self) -> argparse.Namespace:
-        """Return parsed arguments
-
-        Returns:
-            argparse.Namespace: Object with attributes files: list[str], report: str"""
         args = self.parser.parse_args()
         return args

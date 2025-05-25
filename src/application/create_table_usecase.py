@@ -5,7 +5,7 @@ from src.domain.table import Table
 
 
 class CreateTableUseCase(TableCreator):
-    header: list[str] = ['department', 'name', 'email', 'hours', 'payout']
+    header: list[str] = ['department', 'name', 'email', 'hours', 'rate', 'payout']
 
     def __init__(self, files_reader: FilesReader):
         self._table_name = files_reader.get_report_name()
